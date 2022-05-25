@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --Nav: white;
+    --section: black;
+}
+
+header{
+    background-color: var(--section);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
