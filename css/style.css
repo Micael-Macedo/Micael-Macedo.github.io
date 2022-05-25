@@ -3,13 +3,28 @@
 }
 
 :root{
-    --Nav: white;
+    --text-white: white;
     --section: black;
-}
+    --text-purple: rgba(128, 0, 128, 0.849);
+    --bg-grey: linear-gradient(115deg, black, rgba(148, 148, 148, 0.925));
 
+}
+body{
+
+}
+nav a{
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text-white);
+}
+nav a:hover{
+    text-decoration: none;
+    color: var(--text-purple);
+}
 header{
     background-color: var(--section);
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     
@@ -21,7 +36,22 @@ nav{
 }
 
 section{
+    background-image: var(--bg-grey);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+section p{
+    font-size: 20px;
+    font-weight: 200px;
+    color: var(--text-white);
+}
+
+section a, a:hover{
+    text-decoration: none;
+}
+
+section a:hover{
+    color: var(--text-purple);
 }
