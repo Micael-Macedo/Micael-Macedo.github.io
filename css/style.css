@@ -6,12 +6,10 @@
     --text-white: white;
     --section: black;
     --text-purple: rgba(128, 0, 128, 0.849);
-    --bg-grey: linear-gradient(115deg, black, rgba(148, 148, 148, 0.925));
+    --bg-grey: linear-gradient(100deg, black, rgba(148, 148, 148, 0.925));
 
 }
-body{
 
-}
 nav a{
     font-size: 25px;
     font-weight: 400;
@@ -37,9 +35,17 @@ nav{
 
 section{
     background-image: var(--bg-grey);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex ;
+    text-align: justify;
+    flex-direction: column;
+}
+section h1{
+    color: var(--text-purple);
+}
+section h2{
+    color: var(--text-purple);
+    font-size: 30px;
+    font-weight: 400;
 }
 
 section p{
@@ -54,4 +60,19 @@ section a, a:hover{
 
 section a:hover{
     color: var(--text-purple);
+}
+
+.topicos{
+    background-color: var(--bg-grey);
+    border: var(--section) 2px;
+}
+
+.icones img{
+    width: 60px;
+    height: 60px;
+}
+#linguagem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
