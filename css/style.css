@@ -6,10 +6,18 @@
     --text-white: white;
     --section: black;
     --text-purple: rgba(128, 0, 128, 0.849);
+    --btn-primary-purple: rgba(128, 0, 128, 0.849);
     --bg-grey: linear-gradient(100deg, black, rgba(148, 148, 148, 0.925));
 
 }
-
+.btn-primary{
+    background-color: var(--btn-primary-purple)  !important;
+    border: var(--text-white) !important;
+}
+.btn-primary:hover{
+    background-color: var(--text-white) !important;
+    color: var(--section) !important;
+}
 nav a{
     font-size: 25px;
     font-weight: 400;
@@ -60,6 +68,43 @@ section a, a:hover{
 
 section a:hover{
     color: var(--text-purple);
+}
+#imagemPortifolio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.port-Card{
+    background-color: var(--section);
+    width: 750px;
+    height: 480px;
+    margin: 5px 50px;
+}
+.port-Card a{
+    margin-top: 40px;
+}
+.port-Linguagens-Usadas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2px 50px;
+}
+#imagemPortifolio img{
+    max-width: 750px;
+}
+#imagemPortifolio a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px 50px;
+}
+
+#sobreMim img{
+    width: 300px;
+    border-radius: 60%;
+    overflow: hidden;
+    position: relative;
 }
 
 .topicos{
