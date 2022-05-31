@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -8,6 +9,7 @@
     --text-purple: rgba(128, 0, 128, 0.849);
     --btn-primary-purple: rgba(128, 0, 128, 0.849);
     --bg-grey: linear-gradient(100deg, black, rgba(148, 148, 148, 0.925));
+    --card-p: gray;
 
 }
 .btn-primary{
@@ -17,6 +19,13 @@
 .btn-primary:hover{
     background-color: var(--text-white) !important;
     color: var(--section) !important;
+}
+header{
+    background-color: var(--section);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
 }
 nav a{
     font-size: 25px;
@@ -28,13 +37,6 @@ nav a:hover{
     text-decoration: none;
     color: var(--text-purple);
 }
-header{
-    background-color: var(--section);
-    height: 60px;
-    display: flex;
-    align-items: center;
-    
-}
 nav{
     display: flex;
     align-items: center;
@@ -44,7 +46,7 @@ nav{
 section{
     background-image: var(--bg-grey);
     display:flex ;
-    text-align: justify;
+    text-align: center;
     flex-direction: column;
 }
 section h1{
@@ -77,21 +79,25 @@ section a:hover{
 }
 .port-Card{
     background-color: var(--section);
-    width: 750px;
+    width: 600px;
     height: 480px;
     margin: 5px 50px;
+    border-radius: 5px;
 }
 .port-Card a{
     margin-top: 40px;
 }
 .port-Linguagens-Usadas{
+    background-color: var(--card-p);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 2px 50px;
+    padding: 10px 0;
+
 }
 #imagemPortifolio img{
-    max-width: 750px;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
 }
 #imagemPortifolio a{
     display: flex;
@@ -111,7 +117,10 @@ section a:hover{
     background-color: var(--bg-grey);
     border: var(--section) 2px;
 }
+#linguagem{
+    margin: 30px 75px;
 
+}
 .icones img{
     width: 60px;
     height: 60px;
@@ -121,3 +130,11 @@ section a:hover{
     align-items: center;
     justify-content: space-between;
 }
+
+#linksContatos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 35px;
+}
+
