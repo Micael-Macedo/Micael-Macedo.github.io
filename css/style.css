@@ -1,65 +1,66 @@
-*{
-    box-sizing: border-box;
-}
+
 
 :root{
-    --text-white: white;
+    --text-black: black;
+    --nav-text: white;
     --section: black;
-    --text-purple: rgba(128, 0, 128, 0.849);
-    --btn-primary-purple: rgba(128, 0, 128, 0.849);
-    --bg-grey: linear-gradient(100deg, black, rgba(148, 148, 148, 0.925));
+    --text-purple: rgba(90, 0, 128, 0.849);
+    --btn-primary-purple: rgba(90, 0, 128, 0.849);
+    --bg-grey: white;
     --card-p: gray;
     --icon-html: #E44D26;
     --icon-css:#2062AF;
     --icon-Js: #F7DF1E;
     --icon-text: black; 
+}
 
-}
-.btn-primary{
-    background-color: var(--btn-primary-purple)  !important;
-    border: var(--text-white) !important;
-}
-.btn-primary:hover{
-    background-color: var(--text-white) !important;
-    color: var(--section) !important;
-}
 header{
-    background-color: var(--section);
+    position: relative;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     height: 60px;
     display: flex;
+    flex-flow: nowrap;
     align-items: center;
-    
+    background-color: var(--section);
+    margin-bottom: 20px;
 }
-nav a{
-    font-size: 32px;
-    font-weight: 400;
-    text-decoration: none;
-    color: var(--text-white);
-}
-nav a:hover{
-    text-decoration: none;
-    color: var(--text-purple);
-}
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+nav a{
+    display: block;
+    font-size: 32px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--nav-text);
+}
+nav a:hover{
+    text-decoration: none;
+    color: var(--text-purple);
+}
 
 section{
+    position: relative;
+    display: flex;
     background-image: var(--bg-grey);
-    display:flex ;
     text-align: center;
     flex-direction: column;
+}
+
+section h1{
+    color: var(--text-purple);
 }
 
 #sobreMim p{
     font-size: 28px;
 }
-section h1{
-    color: var(--text-purple);
-}
 section h2{
+    margin: 40px 0;
     color: var(--text-purple);
     font-size: 30px;
     font-weight: 400;
@@ -78,27 +79,62 @@ section a, a:hover{
 section a:hover{
     color: var(--text-purple);
 }
+
+#skills{
+    display: flex;
+    max-width: 1200px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: baseline;
+    
+}
+.icones{
+    width: 100px;
+    height: 100px;
+    margin: 10px 15px;
+}
+
 #imagemPortifolio{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
 }
-.port-Card{
-    background-color: var(--section);
-    width: 600px;
-    height: 370px;
-    margin: 5px 50px;
+#Portifolio-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-width: 300px;
+}
+.portifolio-card{
+    display: flex;
     border-radius: 5px;
+    flex-direction: column;
+    width: 550px;
+    height: 420px;
+    margin: 10px 10px;
+    background-color: black;
 }
-.port-Card a{
-    padding: 0 10px;
-    margin-top: 40px;
+.portifolio-card img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.portifolio-skills{
+    margin-top: 10px;
+    display: inline-flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.portifolio-card a{
+    color: var();
+    height: 40px;
+    background-color: gray;
 }
 .icon{
     border: solid var(--icon-text) 1.5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
     border-radius: 15px;
     color: var(--icon-text);
 }
@@ -109,17 +145,7 @@ section a:hover{
     background-color: var(--icon-css)
 }
 .icon-js{
-    background-color: var(--icon-Js);
-
-}
-.port-Linguagens-Usadas{
-    background-color: var(--card-p);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: center;
-    height: 50px;
-    padding-top: 12px;
+    background-color: var(--icon-Js);  
 }
 
 #imagemPortifolio img{
@@ -144,19 +170,12 @@ section a:hover{
     background-color: var(--bg-grey);
     border: var(--section) 2px;
 }
-#linguagem{
-    margin: 30px 75px;
 
-}
 .icones img{
     width: 60px;
     height: 60px;
 }
-#linguagem{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 #linksContatos{
     display: flex;
@@ -165,3 +184,12 @@ section a:hover{
     margin: 15px 35px;
 }
 
+
+.btn-primary{
+    background-color: var(--btn-primary-purple)  !important;
+    border: var(--text-white) !important;
+}
+.btn-primary:hover{
+    background-color: var(--text-white) !important;
+    color: var(--section) !important;
+}
