@@ -175,7 +175,24 @@ section a:hover{
     width: 60px;
     height: 60px;
 }
-
+#certificados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#certificados button{
+    background-color: purple !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+#card_certificados{
+    margin: 0px 100px;
+}
+#card_certificados img{
+ width: 500px;
+ height: 200px;
+}
 
 #linksContatos{
     display: flex;
