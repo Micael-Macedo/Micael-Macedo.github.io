@@ -85,7 +85,7 @@ section a:hover{
     max-width: 1200px;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
     
 }
 .icones{
@@ -175,7 +175,7 @@ section a:hover{
     width: 60px;
     height: 60px;
 }
-#certificados{
+#content_certificados{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,15 +190,20 @@ section a:hover{
     margin: 0px 100px;
 }
 #card_certificados img{
- width: 500px;
- height: 200px;
+ width: 700px;
+ height: 400px;
+    opacity: 1;
+ transition: opacity 800ms;
 }
-
 #linksContatos{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 15px 35px;
+}
+.contatoLink img{
+    width: 60px;
+    height: 60px;
 }
 
 

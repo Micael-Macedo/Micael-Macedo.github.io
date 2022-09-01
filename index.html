@@ -16,7 +16,7 @@
             <nav>
                 <a href="#sobreMim">Sobre mim</a>
                 <a href="#habilidade">Habilidades</a>
-                <a href="#">Certificados</a>
+                <a href="#certificados">Certificados</a>
                 <a href="#portifolio">Portifolio</a>
                 <a href="#contato">Contato</a>
             </nav>
@@ -24,10 +24,10 @@
     </header>
     <section>
         <div class="container">
-            <h1>Home</h1>
+            <h1>Conheça sobre Micael Macedo</h1>
             <div id="sobreMim" class="topicos">
                 <h2>Sobre mim</h2>
-                <img src="img/Foto Perfil.jpg" alt="">
+                <img src="img/icons/Foto Perfil.jpg" alt="">
                 <p>Idade: 19 anos</p>
                 <p>Estou explorando o mundo do desenvolvimento e buscando fazer o meu melhor</p>
                 <p>Querendo ajudar o próximo</p>
@@ -39,60 +39,75 @@
                 <h2>Habilidades</h2>
                 <div id="skills" class="container">
                     <div class="icones">
-                        <img src="img/html.png">
+                        <img src="img/icons/html.png">
                         <p>HTML</p>
                     </div>
                     <div class="icones">
-                        <img src="img/css.png" alt="">
+                        <img src="img/icons/css.png" alt="">
                         <p>CSS</p>
                     </div>
                     <div class="icones">
-                        <img src="img/javascript.png" alt="">
+                        <img src="img/icons/javascript.png" alt="">
                         <p>JavaScript</p>
                     </div>
                     <div class="icones">
-                        <img src="img/c.png" alt="">
+                        <img src="img/icons/c.png" alt="">
                         <p>C</p>
                     </div>
                     <div class="icones">
-                        <img src="img/java.png" alt="">
+                        <img src="img/icons/c-sharp.png" alt="">
+                        <p>C#</p>
+                    </div>
+                    <div class="icones">
+                        <img src="img/icons/java.png" alt="">
                         <p>Java</p>
                     </div>
                     <div class="icones">
-                        <img src="img/node.js.png" alt="">
+                        <img src="img/icons/node.js.png" alt="">
                         <p>Node</p>
                     </div>
                     <div class="icones">
-                        <img src="img/mysql.png" alt="">
+                        <img src="img/icons/mysql.png" alt="">
                         <p>Mysql</p>
                     </div>
                     <div class="icones">
-                        <img src="img/git.png" alt="">
+                        <img src="img/icons/git.png" alt="">
                         <p>Git</p>
                     </div>
                     <div class="icones">
-                        <img src="img/bootstrap.png" alt="">
+                        <img src="img/icons/bootstrap.png" alt="">
                         <p>Bootstrap</p>
+                    </div>
+                    <div class="icones">
+                        <img src="img/icons/react.png" alt="">
+                        <p>React</p>
+                    </div>
+                    <div class="icones">
+                        <img src="img/icons/Handlebars.png" alt="">
+                        <p>Handlebars</p>
                     </div>
                 </div>
             </div>
             <hr>
             <div id="certificados">
-                <div>
-                    <button id="certificados_button_left" onclick="changeCertificados('certificados_button_left', 'card_certificados')">Left</button>
-                </div>
-                <div id="card_certificados">
-                    <img src="img/c-icon.svg" alt="" class="card_certificados_img" style="display: block;">
-                    <img src="img/c-plus-plus.png" alt="" class="card_certificados_img" style="display: none;">
-                    <img src="img/c-sharp.png" alt="" class="card_certificados_img" style="display: none;">
-                    <img src="img/css.png" alt="" class="card_certificados_img" style="display: none;">
-                    <img src="img/node.js.png" alt="" class="card_certificados_img" style="display: none;">
-                    <img src="img/bootstrap.png" alt="" class="card_certificados_img" style="display: none;">
-                </div>
-                <div >
-                    <button id="certificados_button_right" onclick="changeCertificados('certificados_button_right', 'card_certificados')">
-                        Right
-                    </button>
+                <h2>Certificados</h2>
+                <div id="content_certificados">
+                    <div>
+                        <button id="certificados_button_left" onclick="changeCertificados('certificados_button_left', 'card_certificados')">Left</button>
+                    </div>
+                    <div id="card_certificados">
+                        <img src="img/Certificados/11-ANOTAÇÃO DE DADOS APLICADA À INTELIGÊNCIA ARTIFICIAL VISÃO COMPUTACIONAL E SEUS FATORES RELEVANTES-1.png" alt="" class="card_certificados_img" style="display: block;">
+                        <img src="img/Certificados/Certificado Git-1.png" alt="" class="card_certificados_img" style="display: none;">
+                        <img src="img/Certificados/CertificadoHTML e CSS-1.png" alt="" class="card_certificados_img" style="display: none;">
+                        <img src="img/Certificados/Escola Virtual - Fundação Bradesco HTML Básico-1.png" alt="" class="card_certificados_img" style="display: none;">
+                        <img src="img/Certificados/Escola Virtual - Fundação Bradesco JavaScript-1.png" alt="" class="card_certificados_img" style="display: none;">
+                        <img src="img/Certificados/Micael Macedo Alves Barbosa_certificado Emag Desenvolvedor-1.png" alt="" class="card_certificados_img" style="display: none;">
+                    </div>
+                    <div >
+                        <button id="certificados_button_right" onclick="changeCertificados('certificados_button_right', 'card_certificados')">
+                            Right
+                        </button>
+                    </div>
                 </div>
             </div>
             <hr>
@@ -100,7 +115,7 @@
                 <h2>Portifolio</h2>
                 <div id="Portifolio-content">
                     <div class="portifolio-card">
-                        <img src="img/DSmovie.png" alt="">
+                        <img src="img/icons/DSmovie.png" alt="">
                         <div class="portifolio-skills">
                             <div class="icon icon-html">html</div>
                             <div class="icon icon-css">css</div>
@@ -108,7 +123,7 @@
                         <a target="_blank" href="https://micael-macedo.github.io/DSMovie/">Site DSmovie</a>
                     </div>
                     <div class="portifolio-card">
-                        <img src="img/GeekVip.png" alt="">
+                        <img src="img/icons/GeekVip.png" alt="">
                         <div class="portifolio-skills">
                             <div class="icon icon-html">html</div>
                             <div class="icon icon-css">css</div>
@@ -123,17 +138,22 @@
                 <h2>Contato</h2>
                 <div id="linksContatos">
                     <div class="contatoLink">
-                        <a href="https://www.linkedin.com/in/micael-macedo-08560120a/"><img src="img/linkedin.svg">
+                        <a href="https://www.linkedin.com/in/micael-macedo-08560120a/"><img src="img/icons/linkedin.svg">
                             <p>Linkedin</p>
                         </a>
                     </div>
                     <div class="contatoLink">
-                        <a href="mailto:micaelm2003@gmail.com" target="_blank"><img src="img/email-square.svg">
+                        <a href="mailto:micaelm2003@gmail.com" target="_blank"><img src="img/icons/email-square.svg">
                             <p>Email</p>
                         </a>
                     </div>
                     <div class="contatoLink">
-                        <a href="https://github.com/Micael-Macedo" target="_blank"><img src="img/github.svg">
+                        <a href="https://api.whatsapp.com/send?phone=5571988373121" target="_blank"><img src="img/icons/whatsappIcon.png">
+                            <p>Whatsapp</p>
+                        </a>
+                    </div>
+                    <div class="contatoLink">
+                        <a href="https://github.com/Micael-Macedo" target="_blank"><img src="img/icons/github.svg">
                             <p>Github</p>
                         </a>
                     </div>
