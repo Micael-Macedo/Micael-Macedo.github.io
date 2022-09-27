@@ -1,217 +1,136 @@
-
-
-:root{
-    --text-black: black;
-    --nav-text: white;
-    --section: black;
-    --text-purple: rgba(90, 0, 128, 0.849);
-    --btn-primary-purple: rgba(90, 0, 128, 0.849);
-    --bg-grey: white;
-    --card-p: gray;
-    --icon-html: #E44D26;
-    --icon-css:#2062AF;
-    --icon-Js: #F7DF1E;
-    --icon-text: black; 
+*{
+    font-family: 'Ubuntu', sans-serif;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
-
+body{
+background-color: black;
+}
 header{
-    position: relative;
-    top: 0;
-    z-index: 1;
     width: 100%;
-    height: 60px;
-    display: flex;
-    flex-flow: nowrap;
-    align-items: center;
-    background-color: var(--section);
-    margin-bottom: 20px;
+    height: 10%;
+    padding: 2% 3%;
+    border-bottom: 3px solid white;
+    
 }
-
 nav{
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 nav a{
-    display: block;
-    font-size: 32px;
-    font-weight: 400;
+    color: #68c3be;
     text-decoration: none;
-    color: var(--nav-text);
+    transition: 0.3s;
 }
 nav a:hover{
-    text-decoration: none;
-    color: var(--text-purple);
+    color: #d72c6e;
+    transform: scale(1.1);
 }
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+main {
+    max-width: 900px;
+    width: 90%;
+    margin: 32px auto;
 
+    display: grid;
+    gap: 24px;
+
+    margin-top: 32px;
+    color: white;
+}
+.photoMicael{
+    margin-bottom: 20px;
+}
+.photoMicael img{
+    display: flex;
+    margin: auto;
+    padding: 4px;
+    background-image: linear-gradient(90deg, #d72c6e 0%, #68c3be 50.52%, #f3de5e 100%);
+    width: 180px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.photoMicael img:hover{
+    transform: scale(1.1);
+}
 section{
-    position: relative;
+    background-image: linear-gradient(90deg, #d72c6e 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+section div{
+    background-color: #484D50;
+    border-radius: 10px;
+    padding: 3% 2%;
+}
+p{
+    text-align: justify;
+}
+.TechSkills{
     display: flex;
-    background-image: var(--bg-grey);
+    padding: 0 5%;
+    margin: 20px 3%;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 10px;
+    justify-content: center;
+    
+}
+.TechSkillsIcons{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    flex-direction: column;
-}
-
-section h1{
-    color: var(--text-purple);
-}
-
-#sobreMim p{
-    font-size: 28px;
-}
-section h2{
-    margin: 40px 0;
-    color: var(--text-purple);
-    font-size: 30px;
-    font-weight: 400;
-}
-
-section p{
-    font-size: 20px;
-    font-weight: 200px;
-    color: var(--text-white);
-}
-
-section a, a:hover{
-    text-decoration: none;
-}
-
-section a:hover{
-    color: var(--text-purple);
-}
-
-#skills{
-    display: flex;
-    max-width: 1200px;
-    flex-flow: row wrap;
-    align-items: center;
     justify-content: center;
-    
+    padding: auto;
+    transition: 0.4s;
+    gap: 6px;
 }
-.icones{
-    width: 100px;
-    height: 100px;
-    margin: 10px 15px;
+.TechSkillsIcons img{
+    margin: auto;
+    width: 64px;
+    height: auto;
 }
+.TechSkillsIcons p{
+    text-align: center;
+}
+.TechSkillsIcons:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.CertificadosImage{
 
-#imagemPortifolio{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
 }
-#Portifolio-content{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    min-width: 300px;
-}
-.portifolio-card{
-    display: flex;
-    border-radius: 5px;
-    flex-direction: column;
-    width: 550px;
-    height: 420px;
-    margin: 10px 10px;
-    background-color: black;
-}
-.portifolio-card img{
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-}
-.portifolio-skills{
-    margin-top: 10px;
-    display: inline-flex;
-    align-content: center;
-    justify-content: space-around;
-}
-.portifolio-card a{
-    color: var();
-    height: 40px;
-    background-color: gray;
-}
-.icon{
-    border: solid var(--icon-text) 1.5px;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    border-radius: 15px;
-    color: var(--icon-text);
-}
-.icon-html{
-    background-color: var(--icon-html);
-}
-.icon-css{
-    background-color: var(--icon-css)
-}
-.icon-js{
-    background-color: var(--icon-Js);  
-}
-
-#imagemPortifolio img{
-    border-radius: 5px 5px 0 0;
+#CertificadosImage img{
     width: 100%;
 }
-#imagemPortifolio a{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5px 50px;
-}
 
-#sobreMim img{
-    width: 300px;
-    border-radius: 60%;
-    overflow: hidden;
-    position: relative;
-}
-
-.topicos{
-    background-color: var(--bg-grey);
-    border: var(--section) 2px;
-}
-
-.icones img{
-    width: 60px;
-    height: 60px;
-}
-#content_certificados{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#certificados button{
-    background-color: purple !important;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-}
-#card_certificados{
-    margin: 0px 100px;
-}
-#card_certificados img{
- width: 700px;
- height: 400px;
-    opacity: 1;
- transition: opacity 800ms;
+#ProjetosImages img{
+    width: 50%;
 }
 #linksContatos{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 15px 35px;
+    justify-content: center;
 }
-.contatoLink img{
-    width: 60px;
-    height: 60px;
+#linksContatos div img{
+    width: 50px;
+    transition: 0.3s;
 }
-
-
-.btn-primary{
-    background-color: var(--btn-primary-purple)  !important;
-    border: var(--text-white) !important;
+#linksContatos div img:hover{
+    transform: scale(1.1);
+    width: 10%;
 }
-.btn-primary:hover{
-    background-color: var(--text-white) !important;
-    color: var(--section) !important;
+main section:nth-child(1){
+    animation-delay: 0.5s;
+}
+main section:nth-child(2){
+    animation-delay: 0.5s;
 }
