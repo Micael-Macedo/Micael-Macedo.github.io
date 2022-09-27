@@ -1,171 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Micael Macedo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <title>Micael Macedo</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
 
-</head>
-
-<body>
-    <header>
-        <div class="container">
+    <body>
+        <header>
             <nav>
-                <a href="#sobreMim">Sobre mim</a>
-                <a href="#habilidade">Habilidades</a>
-                <a href="#certificados">Certificados</a>
-                <a href="#portifolio">Portifolio</a>
-                <a href="#contato">Contato</a>
-            </nav>
-        </div>
-    </header>
-    <section>
-        <div class="container">
-            <h1>Conheça sobre Micael Macedo</h1>
-            <div id="sobreMim" class="topicos">
-                <h2>Sobre mim</h2>
-                <img src="img/icons/Foto Perfil.jpg" alt="">
-                <p>Idade: 19 anos</p>
-                <p>Estou explorando o mundo do desenvolvimento e buscando fazer o meu melhor</p>
-                <p>Querendo ajudar o próximo</p>
-                <p>Curso Técnico - Desenvolvimento de Sistemas - SENAI Cimatec</p>
-                <p>Idiomas: Português Nativo, Inglês avançado </p>
-            </div>
-            <hr>
-            <div id="habilidade" class="topicos">
-                <h2>Habilidades</h2>
-                <div id="skills" class="container">
-                    <div class="icones">
-                        <img src="img/icons/html.png">
-                        <p>HTML</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/css.png" alt="">
-                        <p>CSS</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/javascript.png" alt="">
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/c.png" alt="">
-                        <p>C</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/c-sharp.png" alt="">
-                        <p>C#</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/java.png" alt="">
-                        <p>Java</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/node.js.png" alt="">
-                        <p>Node</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/mysql.png" alt="">
-                        <p>Mysql</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/git.png" alt="">
-                        <p>Git</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/bootstrap.png" alt="">
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/react.png" alt="">
-                        <p>React</p>
-                    </div>
-                    <div class="icones">
-                        <img src="img/icons/Handlebars.png" alt="">
-                        <p>Handlebars</p>
-                    </div>
+                <div>
+                    <ul>
+                        <a href="Portfolio.html">
+                            <li>Micael Macedo</li>
+                        </a>
+                    </ul>
                 </div>
-            </div>
-            <hr>
-            <div id="certificados">
-                <h2>Certificados</h2>
-                <div id="content_certificados">
+                <div id="desktop-nav" style="display: no">
+                    <ul>
+                        <a href="#SobreMim">
+                            <li>Sobre mim</li>
+                        </a>
+                        <a href="#Habilidade">
+                            <li>Habilidades</li>
+                        </a>
+                        <a href="#Certificados">
+                            <li>Certificados</li>
+                        </a>
+                        <a href="#Portfolio">
+                            <li>Portfolio</li>
+                        </a>
+                        <a href="#Contato">
+                            <li>Contato</li>
+                        </a>
+                    </ul>
+                </div>
+                <div id="mobile-nav" style="display: none;">
                     <div>
-                        <button id="certificados_button_left" onclick="changeCertificados('certificados_button_left', 'card_certificados')">Left</button>
-                    </div>
-                    <div id="card_certificados">
-                        <img src="img/Certificados/11-ANOTAÇÃO DE DADOS APLICADA À INTELIGÊNCIA ARTIFICIAL VISÃO COMPUTACIONAL E SEUS FATORES RELEVANTES-1.png" alt="" class="card_certificados_img" style="display: block;">
-                        <img src="img/Certificados/Certificado Git-1.png" alt="" class="card_certificados_img" style="display: none;">
-                        <img src="img/Certificados/CertificadoHTML e CSS-1.png" alt="" class="card_certificados_img" style="display: none;">
-                        <img src="img/Certificados/Escola Virtual - Fundação Bradesco HTML Básico-1.png" alt="" class="card_certificados_img" style="display: none;">
-                        <img src="img/Certificados/Escola Virtual - Fundação Bradesco JavaScript-1.png" alt="" class="card_certificados_img" style="display: none;">
-                        <img src="img/Certificados/Micael Macedo Alves Barbosa_certificado Emag Desenvolvedor-1.png" alt="" class="card_certificados_img" style="display: none;">
-                    </div>
-                    <div >
-                        <button id="certificados_button_right" onclick="changeCertificados('certificados_button_right', 'card_certificados')">
-                            Right
-                        </button>
+                        <input type="checkbox" name="" class="checkbtn"><img src="img/menuHamburguer.png"
+                            alt=""></button>
                     </div>
                 </div>
-            </div>
-            <hr>
-            <div id="portifolio" class="topicos">
-                <h2>Portifolio</h2>
-                <div id="Portifolio-content">
-                    <div class="portifolio-card">
-                        <img src="img/icons/DSmovie.png" alt="">
-                        <div class="portifolio-skills">
-                            <div class="icon icon-html">html</div>
-                            <div class="icon icon-css">css</div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div id="SobreMim">
+                    <div class="photoMicael">
+                        <img src="https://media-exp1.licdn.com/dms/image/D4D03AQFQkcF8lIPInQ/profile-displayphoto-shrink_200_200/0/1663874691488?e=1669248000&v=beta&t=GUEivMEMTEJ-H5chn44Bwh1i8JONVFHHjvJdsX7o-yA"
+                            alt="">
+                    </div>
+                    <h1>DEV Micael Macedo</h1>
+                    <div>
+                        <h2>Sobre mim</h2>
+                        <p>Idade: 19 anos</p>
+                        <p>Desenvolvedor Full-stack</p>
+                        <p>Buscando fazer a diferença no mundo me dedicando na área de tecnologia da informação</p>
+                        <p>Curso Técnico - Desenvolvimento de Sistemas - SENAI Cimatec</p>
+                        <p>Idiomas: Português Nativo, Inglês avançado </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="Habilidade">
+                    <h2>Habilidade</h2>
+                    <div class="TechSkills">
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/html.png">
+                            <p>HTML</p>
                         </div>
-                        <a target="_blank" href="https://micael-macedo.github.io/DSMovie/">Site DSmovie</a>
-                    </div>
-                    <div class="portifolio-card">
-                        <img src="img/icons/GeekVip.png" alt="">
-                        <div class="portifolio-skills">
-                            <div class="icon icon-html">html</div>
-                            <div class="icon icon-css">css</div>
-                            <div class="icon icon-js">javascript</div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/css.png" alt="">
+                            <p>CSS</p>
                         </div>
-                        <a target="_blank" href="https://micael-macedo.github.io/geekvip/">Site GeekVip</a>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/javascript.png" alt="">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/c.png" alt="">
+                            <p>C</p>
+                        </div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/c-sharp.png" alt="">
+                            <p>C#</p>
+                        </div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/java.png" alt="">
+                            <p>Java</p>
+                        </div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/node.js.png" alt="">
+                            <p>Node</p>
+                        </div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/mysql.png" alt="">
+                            <p>Mysql</p>
+                        </div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/git.png" alt="">
+                            <p>Git</p>
+                        </div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/bootstrap.png" alt="">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/react.png" alt="">
+                            <p>React</p>
+                        </div>
+                        <div class="TechSkillsIcons">
+                            <img src="img/icons/Handlebars.png" alt="">
+                            <p>Handlebars</p>
+                        </div>
+                    </div>
+                    <div class="TechSkillsDescriptions" style="display: none;">
+                        <div class="TechSkillsDescriptions">
+                            <p>
+                                A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto usado para fazer referência a outros textos, enquanto uma linguagem de marcação é composta por uma série de marcações que dizem para os servidores da web qual é o estilo e a estrutura de um documento.
+                            </p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
+                        <div class="TechSkillsDescriptions">
+                            <p></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <hr>
-            <div id="contato" class="topicos">
-                <h2>Contato</h2>
-                <div id="linksContatos">
-                    <div class="contatoLink">
-                        <a href="https://www.linkedin.com/in/micael-macedo-08560120a/"><img src="img/icons/linkedin.svg">
-                            <p>Linkedin</p>
-                        </a>
-                    </div>
-                    <div class="contatoLink">
-                        <a href="mailto:micaelm2003@gmail.com" target="_blank"><img src="img/icons/email-square.svg">
-                            <p>Email</p>
-                        </a>
-                    </div>
-                    <div class="contatoLink">
-                        <a href="https://api.whatsapp.com/send?phone=5571988373121" target="_blank"><img src="img/icons/whatsappIcon.png">
-                            <p>Whatsapp</p>
-                        </a>
-                    </div>
-                    <div class="contatoLink">
-                        <a href="https://github.com/Micael-Macedo" target="_blank"><img src="img/icons/github.svg">
-                            <p>Github</p>
-                        </a>
+            </section>
+            <section>
+                <div id="Certificados">
+                    <h2>Certificados</h2>
+                    <div id="CertificadosImage">
+                        <div><img src="img/Certificados/11-ANOTAÇÃO DE DADOS APLICADA À INTELIGÊNCIA ARTIFICIAL VISÃO COMPUTACIONAL E SEUS FATORES RELEVANTES-1.png" alt=""></div>
+                        <div><img src="img/Certificados/Certificado Git-1.png" alt=""></div>
+                        <div><img src="img/Certificados/CertificadoHTML e CSS-1.png" alt=""></div>
+                        <div><img src="img/Certificados/Escola Virtual - Fundação Bradesco HTML Básico-1.png" alt=""></div>
+                        <div><img src="img/Certificados/Escola Virtual - Fundação Bradesco JavaScript-1.png" alt=""></div>
+                        <div><img src="img/Certificados/Micael Macedo Alves Barbosa_certificado Emag Desenvolvedor-1.png" alt=""></div>
+                        <div><img src="img/Certificados/SpringReact-1.png" alt=""></div>
                     </div>
                 </div>
-            </div>
-            <hr>
-        </div>
-    </section>
-    <footer>
-
-    </footer>
-    <script src="js/script.js"></script>
-</body>
+            </section>
+            <section>
+                <div id="Projetos">
+                    <h2>Projetos</h2>
+                    <div id="ProjetosImages">
+                        <a href="https://micael-macedo.github.io/NLW_Esports/" target="_blank"><img src="img/Projetos/NlwEsports.png" alt=""></a>
+                        <a href="https://micael-macedo.github.io/Polygeek/" target="_blank"><img src="img/Projetos/PolyGeek.png" alt=""></a>
+                        <a href="https://micael-macedo.github.io/DSMovie/" target="_blank"><img src="img/Projetos/DSMovie.png" alt=""></a>
+                        <a href="https://micael-macedo.github.io/geekvip/" target="_blank"><img src="img/Projetos/GeekVip.png" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="Contato">
+                    <h2>Contato</h2>
+                    <div id="linksContatos">
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
 
 </html>
