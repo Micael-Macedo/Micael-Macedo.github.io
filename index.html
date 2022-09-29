@@ -16,14 +16,40 @@
     <body>
         <header>
             <nav>
-                <div>
-                    <ul>
-                        <a href="Portfolio.html">
-                            <li>Micael Macedo</li>
-                        </a>
-                    </ul>
+                <div class="NavDisplayContent">
+                    <div>
+                        <ul>
+                            <a href="index.html">
+                                <li>Micael Macedo</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div id="desktop-nav">
+                        <ul>
+                            <a href="#SobreMim">
+                                <li>Sobre mim</li>
+                            </a>
+                            <a href="#Habilidade">
+                                <li>Habilidades</li>
+                            </a>
+                            <a href="#Certificados">
+                                <li>Certificados</li>
+                            </a>
+                            <a href="#Projetos">
+                                <li>Projetos</li>
+                            </a>
+                            <a href="#Contato">
+                                <li>Contato</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div id="mobile-nav">
+                        <div>
+                            <button id="MenuButton" onclick="ExibirMenu()"><img src="img/menuHamburguer.png"alt=""></button>
+                        </div>
+                    </div>
                 </div>
-                <div id="desktop-nav" style="display: no">
+                <div id="MobileMenu">
                     <ul>
                         <a href="#SobreMim">
                             <li>Sobre mim</li>
@@ -34,19 +60,13 @@
                         <a href="#Certificados">
                             <li>Certificados</li>
                         </a>
-                        <a href="#Portfolio">
-                            <li>Portfolio</li>
+                        <a href="#Projetos">
+                            <li>Projetos</li>
                         </a>
                         <a href="#Contato">
                             <li>Contato</li>
                         </a>
                     </ul>
-                </div>
-                <div id="mobile-nav" style="display: none;">
-                    <div>
-                        <input type="checkbox" name="" class="checkbtn"><img src="img/menuHamburguer.png"
-                            alt=""></button>
-                    </div>
                 </div>
             </nav>
         </header>
@@ -128,10 +148,14 @@
                             </p>
                         </div>
                         <div class="TechSkillsDescriptions">
-                            <p></p>
+                            <p>
+                                O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). O CSS define como serão exibidos os elementos contidos no código de uma página da internet e sua maior vantagem é efetuar a separação entre o formato e o conteúdo de um documento.
+                            </p>
                         </div>
                         <div class="TechSkillsDescriptions">
-                            <p></p>
+                            <p>
+                                JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em navegadores e manipular comportamentos de páginas web.
+                            </p>
                         </div>
                         <div class="TechSkillsDescriptions">
                             <p></p>
@@ -181,10 +205,22 @@
                 <div id="Projetos">
                     <h2>Projetos</h2>
                     <div id="ProjetosImages">
-                        <a href="https://micael-macedo.github.io/NLW_Esports/" target="_blank"><img src="img/Projetos/NlwEsports.png" alt=""></a>
-                        <a href="https://micael-macedo.github.io/Polygeek/" target="_blank"><img src="img/Projetos/PolyGeek.png" alt=""></a>
-                        <a href="https://micael-macedo.github.io/DSMovie/" target="_blank"><img src="img/Projetos/DSMovie.png" alt=""></a>
-                        <a href="https://micael-macedo.github.io/geekvip/" target="_blank"><img src="img/Projetos/GeekVip.png" alt=""></a>
+                        <div class="ProjectContent">
+                            <a href="https://micael-macedo.github.io/NLW_Esports/" target="_blank"><img src="img/Projetos/NlwEsports.png" alt=""></a>
+                            <h3>Acessar NLW Esportes</h3>
+                        </div>
+                        <div class="ProjectContent">
+                            <a href="https://micael-macedo.github.io/Polygeek/" target="_blank"><img src="img/Projetos/PolyGeek.png" alt=""></a>
+                            <h3>Acessar PolyGeek</h3>
+                        </div>
+                        <div class="ProjectContent">
+                            <a href="https://micael-macedo.github.io/DSMovie/" target="_blank"><img src="img/Projetos/DSMovie.png" alt=""></a>
+                            <h3>Acessar DSMovie</h3>
+                        </div>
+                        <div class="ProjectContent">
+                            <a href="https://micael-macedo.github.io/geekvip/" target="_blank"><img src="img/Projetos/GeekVip.png" alt=""></a>
+                            <h3>Acessar GeekVip</h3>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -192,12 +228,11 @@
                 <div id="Contato">
                     <h2>Contato</h2>
                     <div id="linksContatos">
-                        
+                        <a href="https://api.whatsapp.com/send?phone=5571988373121" target="_blank"><img src="img/icons/whatsappIcon.png" alt="" srcset=""></a><a href=""><img src="img/icons/linkedin.png" alt=""></a><a href=""><img src="img/icons/gmail.png" alt=""></a><a href="https://github.com/Micael-Macedo/"><img src="img/icons/github.png" alt=""></a>
                     </div>
                 </div>
             </section>
         </main>
         <script src="js/script.js"></script>
     </body>
-
 </html>
