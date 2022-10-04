@@ -1,13 +1,20 @@
-var statusButton = 0;
-function ExibirMenu(){
-    MenuButton = document.getElementById('MenuButton');
-    MobileContent = document.getElementById('MobileMenu');
-    if(statusButton == 0){
-        statusButton = 1;
-        MobileContent.style.display = 'flex';
-    }else
-    if(statusButton == 1){
-        statusButton = 0;
-        MobileContent.style.display = 'none';
+var TechSkill = document.getElementById('TechSkills').getElementsByClassName('TechSkillsIcons');
+var TechSkillDescription = document.getElementById('TechSkillsDescriptions').getElementsByClassName('TechSkillsDescriptions');
+var statusSkill = 0;
+function ShowDescription(ChosenTechSkill) {
+    for (i = 0; i < TechSkill.length; i++) {
+
+        if (i == ChosenTechSkill) {
+            if(statusSkill == 0){
+                TechSkillDescription[i].style.display = "block";
+                statusSkill = 1;
+            }else if(statusSkill == 1){
+                TechSkillDescription[i].style.display = "none";
+                statusSkill = 0;
+            }
+        } else
+            if (i != ChosenTechSkill) {
+                TechSkillDescription[i].style.display = "none";
+            }
     }
 }
