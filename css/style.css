@@ -13,7 +13,6 @@
         background: none;
     }
     #MobileMenu{
-        display: none;
         width: 100%;
         justify-content: center;
        
@@ -109,6 +108,7 @@ main {
     margin-bottom: 20px;
 }
 .photoMicael img{
+    animation: fromTop 0.7s 1s backwards;
     display: flex;
     margin: auto;
     padding: 4px;
@@ -222,6 +222,14 @@ main section:nth-child(2){
     animation-delay: 0.5s;
 }
 
-@keyframes identifier {
-    
+@keyframes fromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1s;
+        transform: translateY();
+    }
 }
