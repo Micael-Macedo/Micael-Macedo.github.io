@@ -14,12 +14,19 @@
     }
     #MobileMenu{
         display: none;
-    
+        width: 100%;
+        justify-content: center;
+       
     }
     #MobileMenu ul{
-        
-        background-color: #484D50;
+        margin-top: 20px;
+        width: 100%;
         flex-direction: column;
+    }
+    #MobileMenu li{
+        padding-top: 10px;
+        height: 50px;
+        border-top: 2px solid ;
     }
 }
 @media screen and (min-width: 1101px){
@@ -41,6 +48,7 @@
     text-align: center;
 }
 header{
+    background-color: black;
     width: 100%;
     height: 10%;
     padding: 2% 5%;
@@ -105,7 +113,7 @@ main {
     margin: auto;
     padding: 4px;
     background-image: linear-gradient(90deg, #d72c6e 0%, #68c3be 50.52%, #f3de5e 100%);
-    width: 180px;
+    width: 280px;
     border-radius: 50%;
     transition: 0.5s;
 }
@@ -125,7 +133,7 @@ section div{
 p{
     text-align: justify;
 }
-.TechSkills{
+#TechSkills{
     display: flex;
     padding: 0 5%;
     margin: 20px 3%;
@@ -146,7 +154,7 @@ p{
 }
 .TechSkillsIcons img{
     margin: auto;
-    width: 64px;
+    width: 90px;
     height: auto;
 }
 .TechSkillsIcons p{
@@ -154,25 +162,39 @@ p{
 }
 .TechSkillsIcons:hover{
     cursor: pointer;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
-.CertificadosImage{
-
+#TechSkillsDescriptions{
+    
 }
 #CertificadosImage img{
     width: 100%;
 }
 
 #ProjetosImages img{
-    width: 90%;
+    width: 100%;
 }
 .ProjectContent{
+    width: 100%;
+    padding: 0%;
     font-size: 42px;
     transition: 0.5s;
+    margin-bottom: 50px;
+    background-color: black;
+}
+.ProjectContent a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.ProjectContent a:hover{
+    color: #d72c6e;
 }
 .ProjectContent:hover{
-    color: #d72c6e;
     transform: scale(1.1);
+}
+.usedTechnologies{
+    background-color: black;
 }
 #linksContatos{
     display: flex;
@@ -180,8 +202,8 @@ p{
     justify-content: center;
 }
 #linksContatos img{
-    width: 50px;
-    height: 50px;
+    width: 50%;
+    height:50%;
     transition: 0.3s;
 }
 #linksContatos {
@@ -198,4 +220,8 @@ main section:nth-child(1){
 }
 main section:nth-child(2){
     animation-delay: 0.5s;
+}
+
+@keyframes identifier {
+    
 }
