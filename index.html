@@ -11,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     </head>
 
@@ -46,7 +48,8 @@
                     </div>
                     <div id="mobile-nav">
                         <div>
-                            <button id="MenuButton" onclick="ExibirMenu()"><img src="img/menuHamburguer.png"alt=""></button>
+                            <button id="MenuButton" onclick="ExibirMenu()"><img src="img/menuHamburguer.png"
+                                    alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -75,8 +78,7 @@
             <section>
                 <div id="SobreMim">
                     <div class="photoMicael">
-                        <img src="https://media-exp1.licdn.com/dms/image/D4D03AQFQkcF8lIPInQ/profile-displayphoto-shrink_200_200/0/1663874691488?e=1669248000&v=beta&t=GUEivMEMTEJ-H5chn44Bwh1i8JONVFHHjvJdsX7o-yA"
-                            alt="">
+                        <img src="https://avatars.githubusercontent.com/u/82604727?v=4" alt="">
                     </div>
                     <h1>DEV Micael Macedo</h1>
                     <div>
@@ -141,24 +143,45 @@
                             <img src="img/icons/Handlebars.png" alt="">
                             <p>Handlebars</p>
                         </div>
+                        <div class="TechSkillsIcons" onclick="ShowDescription(11)">
+                            <img src="img/icons/dotnet.png" alt="">
+                            <p>Dotnet</p>
+                        </div>
+                        <div class="TechSkillsIcons" onclick="ShowDescription(11)">
+                            <img src="img/icons/PHP.png" alt="">
+                            <p>PHP</p>
+                        </div>
+                        <div class="TechSkillsIcons" onclick="ShowDescription(11)">
+                            <img src="img/icons/Laravel.png" alt="">
+                            <p>Laravel</p>
+                        </div>
                     </div>
                     <div id="TechSkillsDescriptions">
                         <div class="TechSkillsDescriptions" style="display: none;">
                             <h2>HTML</h2>
                             <p>
-                                A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto usado para fazer referência a outros textos, enquanto uma linguagem de marcação é composta por uma série de marcações que dizem para os servidores da web qual é o estilo e a estrutura de um documento.
+                                A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a
+                                maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto
+                                usado para fazer referência a outros textos, enquanto uma linguagem de marcação é
+                                composta por uma série de marcações que dizem para os servidores da web qual é o estilo
+                                e a estrutura de um documento.
                             </p>
                         </div>
                         <div class="TechSkillsDescriptions" style="display: none;">
                             <h3>CSS</h3>
                             <p>
-                                O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). O CSS define como serão exibidos os elementos contidos no código de uma página da internet e sua maior vantagem é efetuar a separação entre o formato e o conteúdo de um documento.
+                                O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e
+                                utilizada para definir a apresentação (aparência) em páginas da internet que adotam para
+                                o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). O CSS define como
+                                serão exibidos os elementos contidos no código de uma página da internet e sua maior
+                                vantagem é efetuar a separação entre o formato e o conteúdo de um documento.
                             </p>
                         </div>
                         <div class="TechSkillsDescriptions" style="display: none;">
                             <h3>JavaScript</h3>
                             <p>
-                                JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser executada em navegadores e manipular comportamentos de páginas web.
+                                JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser
+                                executada em navegadores e manipular comportamentos de páginas web.
                             </p>
                         </div>
                         <div class="TechSkillsDescriptions" style="display: none;">
@@ -203,15 +226,71 @@
             <section>
                 <div id="Certificados">
                     <h2>Certificados</h2>
-                    <div id="CertificadosImage">
-                        <div><img src="img/Certificados/11-ANOTAÇÃO DE DADOS APLICADA À INTELIGÊNCIA ARTIFICIAL VISÃO COMPUTACIONAL E SEUS FATORES RELEVANTES-1.png" alt=""></div>
-                        <div><img src="img/Certificados/Certificado Git-1.png" alt=""></div>
-                        <div><img src="img/Certificados/CertificadoHTML e CSS-1.png" alt=""></div>
-                        <div><img src="img/Certificados/Módulo II HTML-CCS3-JS-1.png" alt="" srcset=""></div>
-                        <div><img src="img/Certificados/Escola Virtual - Fundação Bradesco HTML Básico-1.png" alt=""></div>
-                        <div><img src="img/Certificados/Escola Virtual - Fundação Bradesco JavaScript-1.png" alt=""></div>
-                        <div><img src="img/Certificados/Micael Macedo Alves Barbosa_certificado Emag Desenvolvedor-1.png" alt=""></div>
-                        <div><img src="img/Certificados/SpringReact-1.png" alt=""></div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Certificados/11-ANOTAÇÃO DE DADOS APLICADA À INTELIGÊNCIA ARTIFICIAL VISÃO COMPUTACIONAL E SEUS FATORES RELEVANTES-1.png"
+                                    alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Certificados/Certificado Git-1.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Certificados/CertificadoHTML e CSS-1.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Certificados/Escola Virtual - Fundação Bradesco HTML Básico-1.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Certificados/Escola Virtual - Fundação Bradesco JavaScript-1.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Certificados/Micael Macedo Alves Barbosa_certificado Emag Desenvolvedor-1.png"
+                                    alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Certificados/Módulo II HTML-CCS3-JS-1.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Certificados/SpringReact-1.png" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                            </svg>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -219,6 +298,15 @@
                 <div id="Projetos">
                     <h2>Projetos</h2>
                     <div id="ProjetosImages">
+                        <div class="ProjectContent">
+                            <a href="https://salvaflow.pages.dev" target="_blank">
+                                <img src="img/Projetos/salvaflow.pages.dev.png" alt="">
+                                <div class="usedTechnologies">
+                                    <h3>Acessar Salvaflow</h3>
+                                    <h4>Tecnologias utilizadas: HTML CSS JavaScript Bootstrap </h4>
+                                </div>
+                            </a>
+                        </div>
                         <div class="ProjectContent">
                             <a href="https://micael-macedo.github.io/NLW_Esports/" target="_blank">
                                 <img src="img/Projetos/NlwEsports.png" alt="">
@@ -245,7 +333,7 @@
                                     <h4>Tecnologias utilizadas: HTML CSS</h4>
                                 </div>
                             </a>
-                            
+
                         </div>
                         <div class="ProjectContent">
                             <a href="https://micael-macedo.github.io/geekvip/" target="_blank">
@@ -263,14 +351,20 @@
                 <div id="Contato">
                     <h2>Contato</h2>
                     <div id="linksContatos">
-                        <a href="https://api.whatsapp.com/send?phone=5571988373121" target="_blank"><img src="img/icons/whatsappIcon.png" alt="" srcset=""></a>
+                        <a href="https://api.whatsapp.com/send?phone=5571988373121" target="_blank"><img
+                                src="img/icons/whatsappIcon.png" alt="" srcset=""></a>
                         <a href=""><img src="img/icons/linkedin.png" alt=""></a>
-                        <a href="mailto:micaelm2009@hotmail.com" target="_blank"><img src="img/icons/gmail.png" alt=""></a>
+                        <a href="mailto:micaelm2009@hotmail.com" target="_blank"><img src="img/icons/gmail.png"
+                                alt=""></a>
                         <a href="https://github.com/Micael-Macedo/"><img src="img/icons/github.png" alt=""></a>
                     </div>
                 </div>
             </section>
         </main>
         <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
     </body>
+
 </html>
