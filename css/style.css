@@ -1,49 +1,15 @@
-@media screen and (max-width: 1100px) {
-    #mobile-nav{
-        display: block;
-    }
-    #desktop-nav{
-        display: none;
-    }
-    #mobile-nav button{
-        cursor: pointer;
-        border: 2px solid #68c3be;
-        padding: 5% 20%;
-        border-radius: 5px;
-        background: none;
-    }
-    #MobileMenu{
-        width: 100%;
-        justify-content: center;
-    }
-    #MobileMenu ul{
-        margin-top: 20px;
-        width: 100%;
-        flex-direction: column;
-    }
-    #MobileMenu li{
-        padding-top: 10px;
-        height: 50px;
-        border-top: 2px solid ;
-    }
-}
-@media screen and (min-width: 1101px){
-    #desktop-nav{
-        display: block;
-    }
-    #mobile-nav{
-        display: none;
-    }
-    #MobileMenu{
-        display: none;
-    }
-}
 *{
     font-family: 'Ubuntu', sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+}
+.hrDivision {
+    background-image: linear-gradient(90deg, #d72c6e 0%, #68c3be 50.52%, #f3de5e 100%);
+    opacity: 1;
+    height: 5px !important;
+    border: 0;
 }
 h2{
     font-size: 60px !important;
@@ -95,15 +61,14 @@ nav ul{
     justify-content: space-between;
 }
 main {
-    max-width: 75%;
     width: 100%;
     margin: 32px auto;
-
     display: grid;
     gap: 24px;
     font-size: 32px;
     margin-top: 32px;
     color: white;
+    padding: 0 300px;
 }
 .photoMicael{
     margin-bottom: 20px;
@@ -241,5 +206,49 @@ main section:nth-child(2){
     to{
         opacity: 1s;
         transform: translateY();
+    }
+}
+@media screen and (max-width: 1100px) {
+
+    #mobile-nav{
+        display: block;
+    }
+    #desktop-nav{
+        display: none;
+    }
+    #mobile-nav button{
+        cursor: pointer;
+        border: 2px solid #68c3be;
+        padding: 5% 20%;
+        border-radius: 5px;
+        background: none;
+    }
+    #MobileMenu{
+        width: 100%;
+        justify-content: center;
+    }
+    #MobileMenu ul{
+        margin-top: 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+    #MobileMenu li{
+        padding-top: 10px;
+        height: 50px;
+        border-top: 2px solid ;
+    }
+    main{
+        padding: 0% !important;
+    }
+}
+@media screen and (min-width: 1101px){
+    #desktop-nav{
+        display: block;
+    }
+    #mobile-nav{
+        display: none;
+    }
+    #MobileMenu{
+        display: none;
     }
 }
