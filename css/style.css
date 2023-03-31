@@ -1,3 +1,25 @@
+:root{
+    --CleanGradiente: linear-gradient(90deg,
+    #d72c6e, 
+    #68c3be, 
+    #f3de5e);
+    --gradiente: linear-gradient(90deg,
+    #d72c6e, 
+    #68c3be, 
+    #f3de5e, 
+    #68c3be, 
+    #d72c6e,
+    #f3de5e 
+    );
+}
+@keyframes linearLoop {
+    to{
+        background-position: left;
+    }
+    from{
+        background-position: right;
+    }
+}
 *{
     font-family: 'Ubuntu', sans-serif !important;
     margin: 0;
@@ -5,8 +27,16 @@
     box-sizing: border-box;
     text-align: center;
 }
+.hidden{
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(-100%);
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+}
 .hrDivision {
-    background-image: linear-gradient(90deg, #d72c6e 0%, #68c3be 50.52%, #f3de5e 100%);
     opacity: 1;
     height: 5px !important;
     border: 0;
@@ -17,10 +47,9 @@ h2{
 header{
     background-color: black;
     width: 100%;
-    height: 10%;
-    padding: 2% 5%;
-    border-bottom: 3px solid white;
-    
+    height: 13vh;
+    padding-top: 3%;   
+    margin-bottom: 5%; 
 }
 body{
     background-color: black !important;
@@ -29,6 +58,7 @@ nav{
     padding-left: 20px;
     padding-right: 20px;
     font-size: 30px;
+    margin-bottom: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +69,7 @@ nav a{
     text-decoration: none;
     transition: 0.3s;
 }
-nav a:hover{
+nav a:hover, nav a:focus{
     color: #d72c6e;
     transform: scale(1.1);
 }
@@ -51,6 +81,21 @@ nav ul{
     gap: 20px;
     list-style: none;
 }
+header hr.hrHeader{
+    width: 100vw;
+    background-image: var(--gradiente);
+    background-position: left;
+    animation: linearLoop 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-size: 200%;
+    opacity: 1;
+    height: 5px;
+    margin-bottom: 0%;
+}
+#mobile-nav{
+    margin-right: 50px;
+}
 #mobile-nav img{
     width: 62px;
 }
@@ -60,6 +105,9 @@ nav ul{
     align-items: center;
     justify-content: space-between;
 }
+.NavDisplayContent div ul{
+    margin-bottom: 0%;
+}
 main {
     width: 100%;
     margin: 32px auto;
@@ -68,7 +116,7 @@ main {
     font-size: 32px;
     margin-top: 32px;
     color: white;
-    padding: 0 300px;
+    padding: 0 10%;
 }
 .photoMicael{
     margin-bottom: 20px;
@@ -78,7 +126,7 @@ main {
     display: flex;
     margin: auto;
     padding: 4px;
-    background-image: linear-gradient(90deg, #d72c6e 0%, #68c3be 50.52%, #f3de5e 100%);
+    background-image: var(--CleanGradiente);
     width: 280px;
     border-radius: 50%;
     transition: 0.5s;
@@ -87,7 +135,13 @@ main {
     transform: scale(1.1);
 }
 section{
-    background-image: linear-gradient(90deg, #d72c6e 0%, #43E7AD 50.52%, #E2D45C 100%);
+    background-image: var(--gradiente);
+    background-size: 300%;
+    background-position: left;
+    animation: linearLoop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     padding-top: 10px;
     border-radius: 10px;
 }
@@ -126,7 +180,7 @@ p{
 .TechSkillsIcons p{
     text-align: center;
 }
-.TechSkillsIcons:hover{
+.TechSkillsIcons:hover, .TechSkillsIcons:focus{
     cursor: pointer;
     transform: scale(1.2);
 }
@@ -145,8 +199,18 @@ p{
     background-color: #43E7AD;
     padding: 2%;
 }
-
+#ProjetosImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+#ProjetosImages .ProjectContent{
+    min-width: 300px;
+    max-width: 400px;
+}
 #ProjetosImages img{
+    border-radius: 10px 10px 0px 0px;
     width: 100%;
 }
 .ProjectContent{
@@ -162,10 +226,10 @@ p{
     color: white;
     transition: 0.5s;
 }
-.ProjectContent a:hover{
+.ProjectContent a:hover, .ProjectContent a:focus{
     color: #d72c6e;
 }
-.ProjectContent:hover{
+.ProjectContent:hover, .ProjectContent:focus{
     transform: scale(1.1);
 }
 .usedTechnologies{
