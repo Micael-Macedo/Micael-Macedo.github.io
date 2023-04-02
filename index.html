@@ -11,73 +11,40 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     </head>
 
     <body>
         <header>
             <nav>
-                <div class="NavDisplayContent">
-                    <div>
-                        <ul>
-                            <a href="index.html">
-                                <li>Micael Macedo</li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div id="desktop-nav">
-                        <ul>
-                            <a href="#SobreMim">
-                                <li>Sobre mim</li>
-                            </a>
-                            <a href="#Habilidade">
-                                <li>Habilidades</li>
-                            </a>
-                            <a href="#Certificados">
-                                <li>Certificados</li>
-                            </a>
-                            <a href="#Projetos">
-                                <li>Projetos</li>
-                            </a>
-                            <a href="#Contato">
-                                <li>Contato</li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div id="mobile-nav">
-                        <div>
-                            <button id="MenuButton" onclick="ExibirMenu()"><img src="img/menuHamburguer.png"
-                                    alt=""></button>
-                        </div>
-                    </div>
-                </div>
-                <div id="MobileMenu" style="display: none;">
+                <div>
                     <ul>
-                        <a href="#SobreMim">
-                            <li>Sobre mim</li>
-                        </a>
-                        <a href="#Habilidade">
-                            <li>Habilidades</li>
-                        </a>
-                        <a href="#Certificados">
-                            <li>Certificados</li>
-                        </a>
-                        <a href="#Projetos">
-                            <li>Projetos</li>
-                        </a>
-                        <a href="#Contato">
-                            <li>Contato</li>
-                        </a>
+                        <li><a href="index.html">Micael Macedo</a></li>
                     </ul>
-                </div>    
+                </div>
+                <div class="desktop-nav">
+                    <ul>
+                        <li><a href="#sobreMim">Sobre Mim</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#certificados">Certificados</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-nav">
+                    <div id="bar-1"></div>
+                    <div id="bar-2"></div>
+                    <div id="bar-3"></div>
+                </div>
             </nav>
             <hr class="hrHeader">
+            <div class="mobile-menu">
+    
+            </div>
         </header>
         <main>
             <section class="hidden">
-                <div id="SobreMim">
+                <div id="sobreMim">
                     <div class="photoMicael">
                         <img src="https://avatars.githubusercontent.com/u/82604727?v=4" alt="">
                     </div>
@@ -94,7 +61,7 @@
                 </div>
             </section>
             <section class="hidden">
-                <div id="Habilidade">
+                <div id="habilidades">
                     <h2>Habilidade</h2>
                     <div id="TechSkills">
                         <div class="TechSkillsIcons" onclick="ShowDescription(0)">
@@ -170,75 +137,10 @@
                             <p>Angular JS</p>
                         </div>
                     </div>
-                    <div id="TechSkillsDescriptions">
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h2>HTML</h2>
-                            <p>
-                                A Linguagem de Marcação de Hipertexto (HTML) é uma linguagem de computador que compõe a
-                                maior parte das páginas da internet e dos aplicativos online. Um hipertexto é um texto
-                                usado para fazer referência a outros textos, enquanto uma linguagem de marcação é
-                                composta por uma série de marcações que dizem para os servidores da web qual é o estilo
-                                e a estrutura de um documento.
-                            </p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>CSS</h3>
-                            <p>
-                                O Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e
-                                utilizada para definir a apresentação (aparência) em páginas da internet que adotam para
-                                o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). O CSS define como
-                                serão exibidos os elementos contidos no código de uma página da internet e sua maior
-                                vantagem é efetuar a separação entre o formato e o conteúdo de um documento.
-                            </p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>JavaScript</h3>
-                            <p>
-                                JavaScript é uma linguagem de programação de alto nível criada, a princípio, para ser
-                                executada em navegadores e manipular comportamentos de páginas web.
-                            </p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>C</h3>
-                            <p></p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>C#</h3>
-                            <p></p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>Java</h3>
-                            <p></p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>Node</h3>
-                            <p></p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>Mysql</h3>
-                            <p></p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>Git</h3>
-                            <p></p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>Bootstrap</h3>
-                            <p></p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>React</h3>
-                            <p></p>
-                        </div>
-                        <div class="TechSkillsDescriptions" style="display: none;">
-                            <h3>Handlebars</h3>
-                            <p></p>
-                        </div>
-                    </div>
                 </div>
             </section>
             <section class="hidden">
-                <div id="Certificados">
+                <div id="certificados">
                     <h2>Certificados</h2>
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-indicators">
@@ -258,11 +160,11 @@
                                 aria-label="Slide 7"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
                                 aria-label="Slide 8"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
                                 aria-label="Slide 9"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
                                 aria-label="Slide 10"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
                                 aria-label="Slide 11"></button>
                         </div>
                         <div class="carousel-inner">
@@ -301,7 +203,7 @@
                             <div class="carousel-item">
                                 <img src="img/Certificados/HTML hcode-1.png" alt="">
                             </div>
-                            
+
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                             data-bs-slide="prev">
@@ -325,7 +227,7 @@
                 </div>
             </section>
             <section class="hidden">
-                <div id="Projetos">
+                <div id="projetos">
                     <h2>Projetos</h2>
                     <div id="ProjetosImages">
                         <div class="ProjectContent hidden">
@@ -423,7 +325,7 @@
                 </div>
             </section>
             <section class="hidden">
-                <div id="Contato">
+                <div id="contato">
                     <h2>Contato</h2>
                     <div id="linksContatos">
                         <a href="https://api.whatsapp.com/send?phone=5571988373121" target="_blank"><img
