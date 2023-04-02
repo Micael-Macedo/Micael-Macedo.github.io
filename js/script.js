@@ -1,11 +1,6 @@
 function ExibirMenu(){
-    MobileMenu = document.getElementById("MobileMenu");
-    if(MobileMenu.style.display == "none"){
-        MobileMenu.style.display = "block";
-    }else
-    if(MobileMenu.style.display == "block"){
-        MobileMenu.style.display = "none";
-    }
+    $('.mobile-nav').toggleClass("menu-toggle");
+    $('.mobile-menu').toggleClass('open');
 }
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) =>{
