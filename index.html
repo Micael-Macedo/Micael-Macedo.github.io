@@ -11,8 +11,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
@@ -20,11 +18,11 @@
 
     <body>
         <header>
-            <nav>
+            <nav class="flex aic jcsb">
                 <ul>
                     <li><a href="index.html">Micael Macedo</a></li>
                 </ul>
-                <ul class="desktop">
+                <ul class="desktop flex mobile-hide">
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="">Habilidades</a></li>
                     <li><a href="">Certificados</a></li>
@@ -41,115 +39,174 @@
             </nav>
         </header>
         <main>
-            <section id="home">
-                <div class="mob-row tablet-inverse-row">
-                    <img src="img/MicaelMacedo.jpeg" alt="">
-                    <div class="info">
-                        <h1>Micael Macedo - Desenvolvedor Fullstack</h1>
-                        <div class="current-status">
-                            <p>Sou responsável por trazer resultados e eficiência para os seus projetos com amor pela
-                                área.</p>
+            <section id="home" class="b1">
+                <div class="flex mob-col tablet-inverse-row content">
+                    <img src="img/MicaelMacedo.jpeg" alt="" class="main-photo">
+                    <div class="info flex col jcsb">
+                        <h1 class="mob-text-center">Micael Macedo - Desenvolvedor Fullstack</h1>
+                        <p class="mob-text-just">Sou responsável por trazer resultados e eficiência para os seus
+                            projetos com amor pela
+                            área.</p>
+                        <div class="current-status mob-text-just">
+
                             <p>Atualmente -> Treinador TI Worldskills Bahia</p>
                             <p>Fazendo graduação em Sistemas de Informação -> UFBA</p>
                             <p>Técnico em Desenvolvimento de Sistemas -> SENAI CIMATEC</p>
                             <p>Técnico em Manutenção de Computadores -> SENAI Dendezeiros
                             </p>
                         </div>
-                        <div class="row mob-jcc desk-jcs">
-                            <a href="" class="btn-1">Ver currículo</a>
-                            <a href="" class="btn-1">Ver resumos</a>
+                        <div class="flex row mob-jcc desk-jcs g-5 mt-5">
+                            <a href="" class="btn-p">Ver currículo</a>
+                            <a href="" class="btn-p">Ver resumos</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="abilitys">
+            <section id="experiences" class="b2">
+                <h2>3 Anos de Experiência</h2>
+                <div class="flex mob-col desk-row infos">
+                    <div class="info">
+                        <h3>Bolsista</h3>
+                        <h4>Atos-Brasil</h4>
+                        <p>Janeiro 2022 - 3 meses</p>
+                        <ul>
+                            <li>Anotação de Dados para IA</li>
+                            <li>Aprimoramento da visão computacional </li>
+                            <li>Desenvolvimento de artigos científicos</li>
+                            <li>Prêmio de melhor trabalho da escola técnica</li>
+                            <li>Considerado um dos melhores bolsistas</li>
+                            <li>Responsável por ensinar outros bolsistas formas eficientes de realizar a anotação</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h3>Desenvolvedor FullStack</h3>
+                        <h4>Bahia SH</h4>
+                        <p>Novembro 2022 - 8 meses</p>
+                        <ul>
+                            <li>Responsável por aplicações financeiros</li>
+                            <li>Desenvolvimento de Landing pages</li>
+                            <li>Realização de documentação</li>
+                            <li>Reuniões com empresas para parcerias e entendimento de aplicações</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h3>Competidor Tecnologias Web</h3>
+                        <h4>Worldskills Bahia</h4>
+                        <p>Janeiro 2023 - 12 meses</p>
+                        <ul>
+                            <li>Medalhista de Prata na competição nacional</li>
+                            <li>Primeira competidor da Bahia na modalidade de tecnologias Web</li>
+                            <li>Palestras nas unidades sobre a worldskills</li>
+                            <li>Desenvolvimento de habilidades como desenvolvedor Fullstack</li>
+                            <li>Desenvolvimento de APIs, Websockets, Wordpress e Manipulação DOM</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h3>Freelancer</h3>
+                        <h4>Autônomo</h4>
+                        <p>Dezembro 2022 - Atualmente</p>
+                        <ul>
+                            <li>Desenvolvimento de Landing Pages e E-commerces</li>
+                            <li>Realização de páginas para trabalho de conclusão</li>
+                            <li>Realização de páginas para divulgação de eventos</li>
+                            <li>Desenvolvimento de E-commerces com Shopify</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h3>Técnico Especializado II</h3>
+                        <h4>SENAI/FIEB</h4>
+                        <p>Fevereiro 2023 - Atualmente</p>
+                        <ul>
+                            <li>Treinador da Bahia nas áreas de TI</li>
+                            <li>Primeiro treinador da Bahia com 21 anos</li>
+                            <li>Organizador da primeira maratona de programação do Senai BAHIA</li>
+                            <li>Responsável pelo apoio de docentes em eventos</li>
+                            <li>Membro da equipe de inovação para novos projetos do Senai Bahia</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="b1">
                 <h2>Habilidades</h2>
-                <div class="row">
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                <div class="flex row wrap icons">
+                    <div class="icon">
+                        <img src="img/icons/html.png" alt="">
                         <h3>HTML</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/css.png" alt="">
                         <h3>CSS</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/javascript.png" alt="">
                         <h3>JS</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
-                        <h3>React</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/WordPress_blue_logo.svg" alt="">
                         <h3>Wordpress</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/AngularJS-Icon.png" alt="">
                         <h3>Angular</h3>
-                    </icon>
-                    <icon>
+                    </div>
+                    <div class="icon">
                         <img src="img/icons/c-icon.svg" alt="">
                         <h3>C</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
-                        <h3>C++</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/csharp-logo.png" alt="">
                         <h3>C#</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/Laravel.png" alt="">
                         <h3>Laravel</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/PHP.png" alt="">
                         <h3>PHP</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/java.png" alt="">
                         <h3>Java</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/node.js.png" alt="">
                         <h3>Node</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/adobe-photoshop-logo-2021.svg" alt="">
                         <h3>Photoshop</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/i" alt="">
                         <h3>Illustrator</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/figma.png" alt="">
                         <h3>Figma</h3>
-                    </icon>
-                    <icon>
-                        <img src="img/icons/c-icon.svg" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="img/icons/git.png" alt="">
                         <h3>GIT</h3>
-                    </icon>
-                    <icon>
+                    </div>
+                    <div class="icon">
                         <img src="img/icons/" alt="">
                         <h3>.NET</h3>
-                    </icon>
+                    </div>
                 </div>
             </section>
-            <section id="profissional-experience">
-                <h2 class="cards">Experiências Profissionais
-                    <div class="card">
-                        <img src="" alt="">
+            <section id="profissional-experience" class="b2">
+                <h2>Experiências Profissionais</h2>
+                <div class="cards">
+                    <a href="" class="card">
+                        <img src="img/Projetos/ArgentaCutelaria.png" alt="">
                         <div class="text-info">
                             <h3>Argenta Cutelaria</h3>
                             <p>Stack: Shopify, API Shopify, Tiny, HTML, CSS, JS</p>
                             <p>E-commerce feito para a Empresa argenta, utilizando o shopify</p>
                         </div>
-                    </div>
-                    <div class="card">
+                    </a>
+                    <a href="" class="card">
                         <img src="" alt="">
                         <div class="text-info">
                             <h3>CECAF-BA</h3>
@@ -157,47 +214,102 @@
                             <p>Landing Page desenvolvidad para apresentação da empresa com direito a publicação de posts
                             </p>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="" alt="">
+                    </a>
+                    <a href="" class="card">
+                        <img src="img/Projetos/salvaflow.pages.dev.png" alt="">
                         <div class="text-info">
-                            <h3></h3>
-                            <p></p>
+                            <h3>SalvaFlow</h3>
+                            <p>Stack: HTML, CSS, Bootstrap</p>
                             <p></p>
                         </div>
-                    </div>
-                </h2>
+                    </a>
+                </div>
             </section>
-            <section id="study-experience">
-                <h2 class="cards">Experiências de Estudo
-                    <div class="card">
-                        <img src="" alt="">
+            <section id="study-experience" class="b1">
+                <h2>Experiências de Estudo</h2>
+                <div class="cards">
+
+                    <a href="" class="card">
+                        <img src="img/Projetos/CaraACarapng.png" alt="">
                         <div class="text-info">
-                            <h3>Argenta Cutelaria</h3>
+                            <h3>Login Page</h3>
                             <p>Stack: Shopify, API Shopify, Tiny, HTML, CSS, JS</p>
                             <p>E-commerce feito para a Empresa argenta, utilizando o shopify</p>
                         </div>
-                    </div>
-                    <div class="card">
-                        <img src="" alt="">
+                    </a>
+                    <a href="" class="card">
+                        <img src="img/Projetos/Mood.png" alt="">
                         <div class="text-info">
-                            <h3>CECAF-BA</h3>
+                            <h3>Mood</h3>
                             <p>Stack: Wordpress, Figma</p>
                             <p>Landing Page desenvolvidad para apresentação da empresa com direito a publicação de posts
                             </p>
                         </div>
+                    </a>
+                    <a href="" class="card">
+                        <img src="img/Projetos/ShopTop.png alt="">
+                        <div class=" text-info">
+                        <h3>ShopTop</h3>
+                        <p>Stack: Shopify, API Shopify, Tiny, HTML, CSS, JS</p>
+                        <p>E-commerce feito para a Empresa argenta, utilizando o shopify</p>
                     </div>
-                    <div class="card">
-                        <img src="" alt="">
+                    <a href="" class="card">
+                        <img src="img/Projetos/CaraACarapng.png" alt="">
                         <div class="text-info">
-                            <h3></h3>
-                            <p></p>
-                            <p></p>
+                            <h3>Cara a Cara</h3>
+                            <p>Stack: Wordpress, Figma</p>
+                            <p>Landing Page desenvolvidad para apresentação da empresa com direito a publicação de posts
+                            </p>
                         </div>
-                    </div>
-                </h2>
+                    </a>
+                    <a href="" class="card">
+                        <img src="img/Projetos/OrlandoCity.png" alt="">
+                        <div class="text-info">
+                            <h3>Orlando City</h3>
+                            <p>Stack: Wordpress, Figma</p>
+                            <p>Landing Page desenvolvidad para apresentação da empresa com direito a publicação de posts
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://micael-macedo.github.io/NLW_Esports" class="card">
+                        <img src="img/Projetos/NlwEsports.png" alt="">
+                        <div class="text-info">
+                            <h3>NLW Esportes</h3>
+                            <p>Stack: Wordpress, Figma</p>
+                            <p>Landing Page desenvolvidad para apresentação da empresa com direito a publicação de posts
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://micael-macedo.github.io/Polygeek/" class="card">
+                        <img src="img/Projetos/PolyGeek.png" alt="">
+                        <div class="text-info">
+                            <h3>PolyGeek</h3>
+                            <p>Stack: Wordpress, Figma</p>
+                            <p>Landing Page desenvolvidad para apresentação da empresa com direito a publicação de posts
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="card">
+                        <img src="img/Projetos/GeekVip.png" alt="">
+                        <div class="text-info">
+                            <h3>GeekVip</h3>
+                            <p>Stack: Wordpress, Figma</p>
+                            <p>Landing Page desenvolvidad para apresentação da empresa com direito a publicação de posts
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://micael-macedo.github.io/DSMovie/" class="card">
+                        <img src="img/Projetos/CaraACarapng.png" alt="">
+                        <div class="text-info">
+                            <h3>DSMovie</h3>
+                            <p>Stack: Wordpress, Figma</p>
+                            <p>Landing Page desenvolvidad para apresentação da empresa com direito a publicação de posts
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </section>
-            <section id="certifies">
+            <section id="certifies" class="b2">
                 <div class="btn-left"></div>
                 <div class="carrousel">
                     <div class="carrousel-content">
@@ -219,8 +331,20 @@
             </section>
             <footer>
                 <h2>Entrar em contato</h2>
-                <div class="contact-btns"><a href="" class="icon"><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></a></div>
-                form>.row>.form
+                <div class="contact-btns">
+                    <a href="https://github.com/Micael-Macedo" class="icon"><img src="img/icons/githubnew.svg"
+                            alt=""></a>
+                    <a
+                        href="https://wa.me/5571988373121?text=Gostaria%20de%20conversar%20sobre%20os%20seus%20servi%C3%A7os"><img
+                            src="img/icons/whatsapp.svg" alt=""></a>
+                    <a href="mailto:micaelm2009@hotmail.com"><img src="img/icons/email.svg" alt=""></a>
+                    <a href="https://www.instagram.com/micael_macedo_/"><img src="img/icons/instagram.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/micael-macedo/"><img src="img/icons/linkedinnew.svg"
+                            alt=""></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>Micael Macedo | Todos os direitos reservados</p>
+                </div>
             </footer>
         </main>
         <script src="js/script.js"></script>
